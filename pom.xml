@@ -88,10 +88,8 @@
                         <phase>package</phase>
                         <configuration>
                             <target>
-                                <copy file="target/${project.artifactId}.jar"
-                                      tofile="${steam.path}/common/SlayTheSpire/mods/${project.artifactId}.jar"/>
-                                <copy file="target/${project.artifactId}.jar"
-                                      tofile="${steam.path}/workshop/content/646570/1605060445/mods/${project.artifactId}.jar"/>
+                                <copy file="target/${project.artifactId}.jar" tofile="${steam.path}/common/SlayTheSpire/mods/${project.artifactId}.jar"/>
+                                <copy file="target/${project.artifactId}.jar" tofile="${steam.path}/workshop/content/646570/1605060445/mods/${project.artifactId}.jar"/>
                             </target>
                         </configuration>
                         <goals>
@@ -154,17 +152,6 @@
             <properties>
                 <steam.path>/media/zzh/data/SteamLibrary/steamapps</steam.path>
                 <sts.path>/common/SlayTheSpire/desktop-1.0.jar</sts.path>
-            </properties>
-        </profile>
-        <profile>
-            <id>zender</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <steam.path>C:/Program Files (x86)/steam/steamapps</steam.path>
-                <sts.path>/common/SlayTheSpire/desktop-1.0.jar</sts.path>
-                <user.aka_name>Typeunknow</user.aka_name>
             </properties>
         </profile>
     </profiles>
